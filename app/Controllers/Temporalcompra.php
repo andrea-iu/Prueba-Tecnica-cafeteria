@@ -24,6 +24,8 @@ class Temporalcompra extends BaseController
 
             $error ='';
 
+
+
             $producto = $this->productos->where('id', $id_producto)->first();
             
             if($producto){
