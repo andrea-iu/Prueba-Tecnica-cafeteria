@@ -8,7 +8,7 @@
                   <a href="<?php echo base_url();?>/categorias" class="btn btn-success">categorias</a>
               </p>
           </div>
-                <div class="table-responsive">
+              <div class="table-responsive">
                 <table id="datatablesSimple">
                         <thead>
                             <tr>
@@ -22,7 +22,6 @@
                        
                         <tbody>
                             <?php foreach ($datos as $dato) {?>
-
                                 <tr>
                                     <td><?php echo $dato['id']; ?></td>
                                     <td><?php echo $dato['nombre']; ?></td>
@@ -30,16 +29,14 @@
                                 </tr>
                            <?php } ?>
                         </tbody>
-
                     </table>
                 </div>
-          
-    </div>
-</main>
+              </div>
+          </main>
 
 
-<!-- Modal -->
-<div class="modal fade" id="modalconfirma" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <!-- Modal -->
+        <div class="modal fade" id="modalconfirma" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">

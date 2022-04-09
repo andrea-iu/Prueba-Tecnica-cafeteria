@@ -30,16 +30,15 @@ class Temporalcompra extends BaseController
             
             if($producto){
                 $datosExiste = $this->temporal->porIdProductoShop($id_producto, $id_compra);
+
                 if ($datosExiste) {
                     
                     $cantidad = $datosExiste->cantidad + $cantidad;
                     $subtotal = $datosExiste->$datosExiste-> precio;
 
-
                     $this->temporal->actualizarProductoCompra($id_producto,$subtotal, $cantidad, $id_compra);
                  
                 }else{
-                    
                     $subtotal= $cantidad* $producto['precio'];
                     $this->temporal->save([
                         'folio'=> $id_compra,
@@ -49,7 +48,6 @@ class Temporalcompra extends BaseController
                         'precio'=> $producto['precio'],
                         'cantidad'=> $cantidad,
                         'subtotal'=> $subtotal
-
                     ]);
 
                 }
@@ -85,7 +83,7 @@ class Temporalcompra extends BaseController
             $fila.="<td>".$row['precio']."</td>";
             $fila.="<td>".$row['cantidad']."</td>";
             $fila.="<td>".$row['subtotal']."</td>";
-            $fila.="<td> <a onclick=\"eliminaProducto(".$row['id_producto']. ",'".$id_compra."')\" class='borrar' ><i class='fas fa-arrow-circle-up'></i></a></td>";
+            $fila.="<td> <a onclick=\"eliminaProducto(".$row['id_producto']. ",'".$id_compra."')\" class='borrar' ><i class='fas fa-trash'></i></a></td>";
             $fila.="</tr>";
         }
         return $fila;

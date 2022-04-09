@@ -789,3 +789,21 @@ CRITICAL - 2022-04-09 18:08:23 --> Undefined variable: estado
 #3 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 C:\xampp\htdocs\cafeteria\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 {main}
+CRITICAL - 2022-04-09 18:42:31 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(832): App\Controllers\Temporalcompra->insertar('1', 2, '6252199891a40')
+#1 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporalcompra))
+#2 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\cafeteria\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-09 18:42:32 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(832): App\Controllers\Temporalcompra->insertar('1', 2, '6252199891a40')
+#1 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporalcompra))
+#2 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\cafeteria\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-09 18:42:33 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(832): App\Controllers\Temporalcompra->insertar('1', 2, '6252199891a40')
+#1 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporalcompra))
+#2 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\cafeteria\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
