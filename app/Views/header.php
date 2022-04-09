@@ -11,6 +11,7 @@
         <link href="<?php echo base_url();?>/css/bootstrap.min.css" rel="stylesheet" />
         <link href="<?php echo base_url();?>/css/datatables.css" rel="stylesheet" />
         <link href="<?php echo base_url();?>/css/styles.css" rel="stylesheet" />
+        <script src="<?php echo base_url();?>/js/all.min.js" ></script>
         <script src="<?php echo base_url();?>/js/jquery-3.6.0.js" ></script>
       
         
