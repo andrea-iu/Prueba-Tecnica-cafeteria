@@ -50,10 +50,7 @@
                         <div> 
                         <div class="sb-sidenav-menu-heading">Compras</div>
                         <a class="nav-link" href="<?php echo base_url();?>/compras/nuevo"><div class="sb-nav-link-icon"><i class="fas fa-cart-arrow-down"></i></div> Nueva Compra</a>
-                        <a class="nav-link" href="<?php echo base_url();?>/productos"><div class="sb-nav-link-icon"><i class=" fas fa-clock"></i></div> Compras</a>
-                        </div>
-
-
-                       
+                        <a class="nav-link" href="<?php echo base_url();?>/compras"><div class="sb-nav-link-icon"><i class=" fas fa-clock"></i></div> Compras</a>
+                        </div>   
                     </nav>
                 </div>

@@ -13,19 +13,25 @@ class ProductosModel extends Model
 	    protected $returnType     = 'array';
 	    protected $useSoftDeletes = false;
 
-	    protected $allowedFields = ['referencia', 'nombre_producto', 'precio', 'peso', 'id_categoria', 'stock_min', 'inventariable', 'id_unidad',  'estado'];
+	    protected $allowedFields = ['referencia', 'nombre_producto', 'precio', 'peso', 'id_categoria', 'stock_min', 'cantidad_sold', 'inventariable', 'id_unidad',  'estado'];
 
 	    protected $useTimestamps = true;
 	    protected $createdField  = 'fecha_reg';
-	    protected $updatedField  = 'fecha_edit';
+	    protected $updatedField  = '';
 	    protected $deletedField  = 'deleted_at';
 
 	    protected $validationRules    = [];
 	    protected $validationMessages = [];
 	    protected $skipValidation     = false;
+
+
+		public function actualizastock($id_producto, $cantidad){
+			$this->set('cantidad_sold', "cantidad_sold + $cantidad", FALSE);
+			$this->where('id', $id_producto);
+			$this->update();
 	}
 
-
+}
 
 
 

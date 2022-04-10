@@ -18,6 +18,7 @@
                                 <th>Nombre</th>
                                 <th>Precio</th>
                                 <th>Existencias</th>
+                                <th>Cantidades Vendidas</th>
                                 <th></th>
                                 <th></th>
                                 
@@ -34,6 +35,7 @@
                                     <td><?php echo $dato['nombre_producto']; ?></td>
                                     <td><?php echo $dato['precio']; ?></td>
                                     <td><?php echo $dato['stock_min']; ?></td>
+                                    <td><?php echo $dato['cantidad_sold']; ?></td>
 
                                     <td> <a href="<?php echo base_url().'/productos/editar/'.$dato['id']; ?>" class="btn btn-warning"><i class="fas fa-edit"></i></a></td>
 

@@ -3,10 +3,8 @@
         <div class="container-fluid px-4">
             <h1 class="mt-4"><?php  echo ($titulo); ?></h1>
             <div>
-			    <p>
-                  <a href="<?php echo base_url();?>/unidades/nuevo" class="btn btn-info">Agregar</a>
-                  <a href="<?php echo base_url();?>/unidades/eliminados" class="btn btn-warning">Eliminar</a>
-			    </p>
+			   <br>
+
 			</div>
                 <div class="card-body">
                     <table id="datatablesSimple">
@@ -14,20 +12,19 @@
                         <thead>
                             <tr>
                                <th>Id</th>
-                               <th>Nombre</th>
-                               <th>Nombre corto</th>
-                               <th></th>
-                               <th></th>
+                               <th>Referencia Compra</th>
+                               <th>Total</th>
+                               <th>Fecha Registro</th>
+                               
                             </tr>
                         </thead>
                         <tbody>
                             <?php foreach ($datos as $dato) {?>
                             <tr>
                                 <td><?php echo $dato['id']; ?></td>
-                                <td><?php echo $dato['nombre']; ?></td>
-                                <td><?php echo $dato['nombre_corto']; ?></td>
-                                <td> <a href="<?php echo base_url().'/unidades/editar/'.$dato['id']; ?>" class="btn btn-warning"><i class="fas fa-edit"></i></a></td>
-                                <td> <a href="#" data-href="<?php echo base_url().'/unidades/eliminar/'.$dato['id']; ?>" type="button"  data-toggle="modal" data-target="#modalconfirma" title="Eliminar registro" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a></td>
+                                <td class="text-dark "><?php echo $dato['folio']; ?></td>
+                                <td class="text-success"><?php echo $dato['total']; ?></td>
+                                <td class="text-primary"><?php echo $dato['fecha_reg']; ?></td>
                             </tr>
                            <?php } ?>
                         </tbody>

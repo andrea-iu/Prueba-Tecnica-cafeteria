@@ -3,35 +3,24 @@
 namespace App\Models;
 use CodeIgniter\Model;
 
-class ComprasModel extends Model
+class DetalleModel extends Model
 {
-	    protected $table      = 'compras';
+	    protected $table      = 'detalle_compra';
 	    protected $primaryKey = 'id';
 
 
 	    protected $returnType     = 'array';
 	    protected $useSoftDeletes = false;
 
-	    protected $allowedFields = ['folio', 'total', 'estado'];
+	    protected $allowedFields = ['id_producto', 'id_compra', 'nombre', 'cantidad', 'precio'];
 
 	    protected $useTimestamps = true;
 	    protected $createdField  = 'fecha_reg';
 	    protected $updatedField  = '';
-	    protected $deletedField  = '';
+	    protected $deletedField  = 'deleted_at';
 
 	    protected $validationRules    = [];
 	    protected $validationMessages = [];
 	    protected $skipValidation     = false;
-
-		public function insertarCompra($id_compra, $total){
-			$this->insert([
-
-				'folio'=> $id_compra,
-				'total'=> $total,
-				
-
-			   ]);
-			   return $this->insertId();
-		}
 	}
 ?>

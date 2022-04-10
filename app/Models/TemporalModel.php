@@ -31,7 +31,7 @@ class TemporalModel extends Model
 
 			return $datos;
 		}
-
+  
 		public function porCompra($folio){
 			
 			$this->select('*');
@@ -40,14 +40,25 @@ class TemporalModel extends Model
 			return $datos;
 		}
 
-		public function actualizarProductoCompra($id_producto,$folio,$subtotal, $cantidad){
+		public function actualizarProductoCompra($id_producto, $folio, $cantidad, $subtotal){
 
-			$this->set('cantidad',$cantidad);
-			$this->set('subtotal',$subtotal);
-			$this->where('id_producto',$id_producto);
-			$this->where('folio',$folio);
+			$this->set('cantidad', $cantidad);
+			$this->set('subtotal', $subtotal);
+			$this->where('id_producto', $id_producto);
+			$this->where('folio', $folio);
 			$this->update();
-
+			
+		}
+		public function eliminarProductoCompra($id_producto, $folio){
+			$this->where('id_producto', $id_producto);
+			$this->where('folio', $folio);
+			$this->delete();
+			
+		}
+		public function eliminarCompra($folio){
+			$this->where('folio', $folio);
+			$this->delete();
+			
 		}
 	}
-?>
+
