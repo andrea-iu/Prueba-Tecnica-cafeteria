@@ -114,7 +114,7 @@ class Temporalcompra extends BaseController
         $res['error'] = '';
         echo json_encode($res);
         
-
+   
     }
   
 }
