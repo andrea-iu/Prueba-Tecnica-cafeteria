@@ -2,9 +2,9 @@ Este proyecto se realizo utilizando el lenguaje de programacion de php y haciend
 
 Instrucciones :
 
-1- El proyecto se relizo de manera local utilizando  xampp como servidor local ,una vez que dercargue le proyecto o lo clone el repositorio  directamente en el equipo debera contar con el programa de xampp  para asi almacenar el la siguiente ruta C:\xampp\htdocs\  la cual permitira su efectiva ejecucion de manera local.
+1- El proyecto se desarrollo de manera local utilizando  xampp como servidor local ,una vez que dercargue le proyecto o lo clone el repositorio  directamente en el equipo debera contar con el programa de xampp  para asi almacenar el la siguiente ruta C:\xampp\htdocs\  la cual permitira su efectiva ejecucion de manera local.
 
-Nota: si no cuenta con el programa de xampp y desea hacer uso de laragon debera almacenar el proyecto en la ruta C:\laragon\www
+Nota: si no cuenta con el programa de xampp y desea hacer uso de laragon debera almacenar el proyecto en la ruta C:\laragon\www\
 
 2- Luego  de haber realizado la instalacion el paquete del proyecto debera modificar el archivo env y modificar su nombre añadiendo el .env
 
@@ -33,7 +33,7 @@ database.default.DBPrefix =
 ______________________________________________________________________________________________________________
 
 
-4- Ya con la correcta instalación del paquete y la base se datos posteriormente ingrese a su navegador de preferencia y ejecute la siguiente ruta el cual lo redirije a la vista previa del sistema en base a los requerimientos de la prueba
+4- Ya con la correcta instalación del paquete y la base de datos, posteriormente ingrese a su navegador de preferencia y ejecute la siguiente ruta el cual lo redirije a la vista previa del sistema en base a los requerimientos de la prueba.
 
 http://localhost/cafeteria/public/
 
