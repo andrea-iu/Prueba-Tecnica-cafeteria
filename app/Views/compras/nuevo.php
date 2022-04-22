@@ -77,15 +77,17 @@
             </div>
 
             <div class="row">
-                <div class="col-12 col-sm-6 offset-md-6">
+                <div class="col-8 col-sm-4 offset-md-4 ">
                   <label for="" style="font-weight: bold; font-size: 30px; text-align: center;">Total $</label>
                   <input type="text" id="total" name="total" size="6"  value="00.00" readonly="true" style="font-weight: bold; font-size: 25px; text-align: center;">
-                
+               
                   <button type="button" id="completar" name="completar" class="btn btn-success">Finalizar Compra</button>
+                  <button type="button" id="cancelar" name="cancelar" class="btn btn-warning" >Cancelar Compra</button>  
                 
                 </div>
             </div>
-        </form>   
+        </form> 
+        
   </div>
 </main>
 
@@ -108,6 +110,14 @@
        }
 
      });
+
+     $("#cancelar").click(function(){
+       
+      location.reload();
+         
+
+    });
+
   });
 
     function buscarProducto(e, tagCodigo, codigo){
@@ -149,7 +159,7 @@
                     $("#cantidad").val('');
                     $("#precio_compra").val('');
                     $("#subtotal").val('');
-                    $("#cantidad").focus();
+                    $("#codigo").focus();
                     Swal.fire(
                       'Error Busqueda',
                       'El arcticulo no se encuentra disponible',
@@ -175,14 +185,12 @@
             success: function(resultado){
               if(resultado == 0){
                 
-              
                 }else{
                   var resultado = JSON.parse(resultado);
 
                       if (resultado.error == '') {
 
                         $("#id_producto").val('');
-                        $("#codigo").val('');
                         $("#nombre").val('');
                         $("#cantidad").val('');
                         $("#precio_compra").val('');
@@ -196,16 +204,25 @@
             }
           }
         });
+      }else{
+        $("#codigo").focus();
+        Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Debe ingresar  un producto!'
+      })
       }
      }
 
      
+
+
 function eliminaProducto(id_producto, id_compra){
   
 
     $.ajax({
       
-      url: '<?php echo base_url();?>/productos/eliminar/' + id_producto+"/"+id_compra,
+      url: '<?php echo base_url();?>/Temporalcompra/eliminar/' + id_producto+"/"+id_compra,
       success: function(resultado){
         if(resultado == 0){
             $(tagCodigo).val();

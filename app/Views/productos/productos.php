@@ -21,7 +21,6 @@
                                 <th>Cantidades Vendidas</th>
                                 <th></th>
                                 <th></th>
-                                
                             </tr>
                         </thead>
                         

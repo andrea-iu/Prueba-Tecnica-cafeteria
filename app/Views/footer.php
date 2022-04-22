@@ -1,7 +1,7 @@
 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Punto de Venta <?php echo date('Y'); ?></div>
+                            <div class="text-muted">Copyright &copy; Gestión Cafeteria <?php echo date('Y'); ?></div>
                             <div>
                                 <a href="#">Politica de Privacidad</a>
                                 &middot;

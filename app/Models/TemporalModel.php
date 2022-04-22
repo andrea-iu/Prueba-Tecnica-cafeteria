@@ -23,6 +23,7 @@ class TemporalModel extends Model
 	    protected $validationMessages = [];
 	    protected $skipValidation     = false;
 
+
 		public function porIdProductoShop($id_producto, $folio){
 			$this->select('*');
 			$this->where('folio', $folio);
@@ -31,6 +32,7 @@ class TemporalModel extends Model
 
 			return $datos;
 		}
+		
   
 		public function porCompra($folio){
 			
@@ -40,15 +42,16 @@ class TemporalModel extends Model
 			return $datos;
 		}
 
-		public function actualizarProductoCompra($id_producto, $folio, $cantidad, $subtotal){
 
+
+		public function actualizarProductoCompra($id_producto, $folio, $cantidad, $subtotal){
 			$this->set('cantidad', $cantidad);
 			$this->set('subtotal', $subtotal);
 			$this->where('id_producto', $id_producto);
 			$this->where('folio', $folio);
 			$this->update();
-			
-		}
+		}			
+
 		public function eliminarProductoCompra($id_producto, $folio){
 			$this->where('id_producto', $id_producto);
 			$this->where('folio', $folio);

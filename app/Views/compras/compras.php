@@ -5,6 +5,13 @@
             <div>
 			   <br>
 
+         <div>
+              <p>
+                  <a href="<?php echo base_url();?>/compras/nuevo" class="btn btn-info text-white">Nueva Compra<i class="fas fa-shopping-cart ml-2"></i></a>
+                  
+              </p>
+          </div>
+
 			</div>
                 <div class="card-body">
                     <table id="datatablesSimple">

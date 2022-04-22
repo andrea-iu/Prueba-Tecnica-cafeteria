@@ -15,7 +15,7 @@
                   <div class="col-12 col-sm-6">
 
                        <label>Codigo</label>
-                       <input class="form-control" id="referencia" name="referencia" type="text" value="<?php echo $productos['referencia'] ?>" autofocus required>
+                       <input class="form-control"  id="referencia" name="referencia" type="text" value="<?php echo $productos['referencia'] ?>" disabled>
 
                   </div>
 

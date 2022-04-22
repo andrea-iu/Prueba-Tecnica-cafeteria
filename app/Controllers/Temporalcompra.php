@@ -23,16 +23,21 @@ class Temporalcompra extends BaseController
             $error ='';
 
             $producto = $this->productos->where('id', $id_producto)->first();
-            
+        
             if($producto){
                 $datosExiste = $this->temporal->porIdProductoShop($id_producto, $id_compra);
+
+                //$consulta_stock = $this->productos->select('stock_min')->where('id', $id_producto)->first();
 
                 if ($datosExiste) {
                     
                     $cantidad = $datosExiste->cantidad + $cantidad;
                     $subtotal = $cantidad * $datosExiste -> precio;
 
-                    $this->temporal->actualizarProductoCompra($id_producto,$subtotal, $cantidad, $id_compra);
+    
+
+                    $this->temporal_compra->actualizarProductoCompra($id_producto, $id_compra, $cantidad, $subtotal);
+                    
                  
                 }else{
                     $subtotal= $cantidad* $producto['precio'];
@@ -93,6 +98,8 @@ class Temporalcompra extends BaseController
         }
         return $total;
     }
+
+    
 
     public function eliminar($id_producto, $id_compra){
 

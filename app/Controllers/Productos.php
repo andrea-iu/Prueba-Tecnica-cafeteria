@@ -66,26 +66,33 @@
 	    }
         
 	    public function insertar(){
-	    	if ($this ->request ->getMethod()== "post" && $this ->validate($this->reglas)) {
-	    	
-                $this->productos->save(['referencia'=> $this->request->getPost('codigo'), 
-                                        'nombre_producto'=> $this->request->getPost('nombre'),
-                                        'precio'=> $this->request->getPost('precio_venta'),
-                                        'peso'=> $this->request->getPost('peso'),
-                                        'stock_min'=> $this->request->getPost('stock_minimo'),
-                                        'inventariable'=> $this->request->getPost('inventariable'),
-                                        'id_unidad'=> $this->request->getPost('id_unidad'),
-                                        'id_categoria'=> $this->request->getPost('id_categoria')]);
-	    	
-	    	return redirect()->to(base_url().'/productos');
-            }else{
-	           	$unidades = $this->unidades->where('estado',1)->findAll();
+
+			// $consulta = $this->productos->where(['referencia' => $this->request->getPost('codigo')])->find();
+
+			
+
+	    	if ($this ->request ->getMethod()== "post"  && $this->productos->where(['referencia' => $this->request->getPost('codigo')])->find()) {
+				$unidades = $this->unidades->where('estado',1)->findAll();
 	            $categorias = $this->categorias->where('estado',1)->findAll();
 	           	$data =['titulo' => 'Agregar productos', 'unidades' => $unidades, 'categorias' => $categorias, 'validations'=> $this->validator];
 
 		    	echo view('header');
 				echo view('productos/nuevo', $data);
 	            echo view('footer');
+               
+	    	
+	    	
+            }else{
+				$this->productos->save(['referencia'=> $this->request->getPost('codigo'), 
+				'nombre_producto'=> $this->request->getPost('nombre'),
+				'precio'=> $this->request->getPost('precio_venta'),
+				'peso'=> $this->request->getPost('peso'),
+				'stock_min'=> $this->request->getPost('stock_minimo'),
+				'inventariable'=> $this->request->getPost('inventariable'),
+				'id_unidad'=> $this->request->getPost('id_unidad'),
+				'id_categoria'=> $this->request->getPost('id_categoria')]);
+				return redirect()->to(base_url().'/productos');
+
                 
             }
 	    }

@@ -29,7 +29,13 @@ class ProductosModel extends Model
 			$this->set('cantidad_sold', "cantidad_sold + $cantidad", FALSE);
 			$this->where('id', $id_producto);
 			$this->update();
-	}
+	    }
+
+		public function actualizaCant($id_producto, $cantidad){
+			$this->set('stock_min', "stock_min - $cantidad", FALSE);
+			$this->where('id', $id_producto);
+			$this->update();
+	    }
 
 }
 

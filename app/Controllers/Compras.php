@@ -69,6 +69,7 @@ class Compras extends BaseController
                     ]);
                     $this->productos = new ProductosModel();
                     $this->productos -> actualizastock($row['id_producto'], $row['cantidad']);
+                    $this->productos -> actualizaCant($row['id_producto'], $row['cantidad']);
                 }
 
                 $this->temporal_compra->eliminarCompra($id_compra);

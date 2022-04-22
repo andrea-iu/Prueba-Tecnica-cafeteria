@@ -1,0 +1,188 @@
+ERROR - 2022-04-22 05:14:55 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: NO)
+CRITICAL - 2022-04-22 05:14:55 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\cafeteria\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\cafeteria\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\cafeteria\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\cafeteria\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp\htdocs\cafeteria\app\Controllers\Home.php(28): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\cafeteria\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-04-22 05:20:25 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: NO)
+CRITICAL - 2022-04-22 05:20:26 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\cafeteria\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\cafeteria\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\cafeteria\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\cafeteria\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp\htdocs\cafeteria\app\Controllers\Home.php(28): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\cafeteria\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-04-22 05:21:36 --> Error connecting to the database: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+
+CRITICAL - 2022-04-22 05:21:36 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+
+#0 C:\xampp\htdocs\cafeteria\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\cafeteria\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\cafeteria\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\cafeteria\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp\htdocs\cafeteria\app\Controllers\Home.php(28): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\cafeteria\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-04-22 05:21:47 --> Error connecting to the database: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+
+CRITICAL - 2022-04-22 05:21:47 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+
+#0 C:\xampp\htdocs\cafeteria\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\cafeteria\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\cafeteria\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\cafeteria\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp\htdocs\cafeteria\app\Controllers\Home.php(28): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\cafeteria\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-22 10:55:54 --> Call to undefined function App\Controllers\getPost()
+#0 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(832): App\Controllers\Productos->insertar()
+#1 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#2 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\cafeteria\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-04-22 11:34:08 --> Illegal parameter data types int and row for operation '='
+CRITICAL - 2022-04-22 11:34:08 --> Illegal parameter data types int and row for operation '='
+#0 C:\xampp\htdocs\cafeteria\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `stock_m...', 0)
+#1 C:\xampp\htdocs\cafeteria\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `stock_m...')
+#2 C:\xampp\htdocs\cafeteria\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `stock_m...')
+#3 C:\xampp\htdocs\cafeteria\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `stock_m...', Array, false)
+#4 C:\xampp\htdocs\cafeteria\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\cafeteria\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\cafeteria\app\Controllers\Temporalcompra.php(29): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(832): App\Controllers\Temporalcompra->insertar('8', '1000', '6262d8f911165')
+#8 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporalcompra))
+#9 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\cafeteria\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-04-22 11:34:09 --> Illegal parameter data types int and row for operation '='
+CRITICAL - 2022-04-22 11:34:09 --> Illegal parameter data types int and row for operation '='
+#0 C:\xampp\htdocs\cafeteria\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `stock_m...', 0)
+#1 C:\xampp\htdocs\cafeteria\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `stock_m...')
+#2 C:\xampp\htdocs\cafeteria\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `stock_m...')
+#3 C:\xampp\htdocs\cafeteria\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `stock_m...', Array, false)
+#4 C:\xampp\htdocs\cafeteria\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\cafeteria\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\cafeteria\app\Controllers\Temporalcompra.php(29): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(832): App\Controllers\Temporalcompra->insertar('8', '1000', '6262d8f911165')
+#8 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporalcompra))
+#9 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\cafeteria\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-04-22 11:34:10 --> Illegal parameter data types int and row for operation '='
+CRITICAL - 2022-04-22 11:34:10 --> Illegal parameter data types int and row for operation '='
+#0 C:\xampp\htdocs\cafeteria\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `stock_m...', 0)
+#1 C:\xampp\htdocs\cafeteria\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `stock_m...')
+#2 C:\xampp\htdocs\cafeteria\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `stock_m...')
+#3 C:\xampp\htdocs\cafeteria\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `stock_m...', Array, false)
+#4 C:\xampp\htdocs\cafeteria\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\cafeteria\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\cafeteria\app\Controllers\Temporalcompra.php(29): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(832): App\Controllers\Temporalcompra->insertar('8', '1000', '6262d8f911165')
+#8 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporalcompra))
+#9 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\cafeteria\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-04-22 11:34:13 --> Illegal parameter data types int and row for operation '='
+CRITICAL - 2022-04-22 11:34:13 --> Illegal parameter data types int and row for operation '='
+#0 C:\xampp\htdocs\cafeteria\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `stock_m...', 0)
+#1 C:\xampp\htdocs\cafeteria\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `stock_m...')
+#2 C:\xampp\htdocs\cafeteria\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `stock_m...')
+#3 C:\xampp\htdocs\cafeteria\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `stock_m...', Array, false)
+#4 C:\xampp\htdocs\cafeteria\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\cafeteria\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\cafeteria\app\Controllers\Temporalcompra.php(29): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(832): App\Controllers\Temporalcompra->insertar('8', '100', '6262d8f911165')
+#8 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporalcompra))
+#9 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\cafeteria\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-04-22 11:34:13 --> Illegal parameter data types int and row for operation '='
+CRITICAL - 2022-04-22 11:34:13 --> Illegal parameter data types int and row for operation '='
+#0 C:\xampp\htdocs\cafeteria\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `stock_m...', 0)
+#1 C:\xampp\htdocs\cafeteria\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `stock_m...')
+#2 C:\xampp\htdocs\cafeteria\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `stock_m...')
+#3 C:\xampp\htdocs\cafeteria\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `stock_m...', Array, false)
+#4 C:\xampp\htdocs\cafeteria\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\cafeteria\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\cafeteria\app\Controllers\Temporalcompra.php(29): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(832): App\Controllers\Temporalcompra->insertar('8', '100', '6262d8f911165')
+#8 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporalcompra))
+#9 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\cafeteria\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-04-22 11:34:14 --> Illegal parameter data types int and row for operation '='
+CRITICAL - 2022-04-22 11:34:14 --> Illegal parameter data types int and row for operation '='
+#0 C:\xampp\htdocs\cafeteria\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `stock_m...', 0)
+#1 C:\xampp\htdocs\cafeteria\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `stock_m...')
+#2 C:\xampp\htdocs\cafeteria\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `stock_m...')
+#3 C:\xampp\htdocs\cafeteria\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `stock_m...', Array, false)
+#4 C:\xampp\htdocs\cafeteria\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\cafeteria\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\cafeteria\app\Controllers\Temporalcompra.php(29): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(832): App\Controllers\Temporalcompra->insertar('8', '100', '6262d8f911165')
+#8 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporalcompra))
+#9 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\cafeteria\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-04-22 11:34:20 --> Illegal parameter data types int and row for operation '='
+CRITICAL - 2022-04-22 11:34:20 --> Illegal parameter data types int and row for operation '='
+#0 C:\xampp\htdocs\cafeteria\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `stock_m...', 0)
+#1 C:\xampp\htdocs\cafeteria\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `stock_m...')
+#2 C:\xampp\htdocs\cafeteria\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `stock_m...')
+#3 C:\xampp\htdocs\cafeteria\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `stock_m...', Array, false)
+#4 C:\xampp\htdocs\cafeteria\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\cafeteria\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\cafeteria\app\Controllers\Temporalcompra.php(29): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(832): App\Controllers\Temporalcompra->insertar('8', '100', '6262d8f911165')
+#8 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporalcompra))
+#9 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\cafeteria\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-04-22 11:34:26 --> Illegal parameter data types int and row for operation '='
+CRITICAL - 2022-04-22 11:34:26 --> Illegal parameter data types int and row for operation '='
+#0 C:\xampp\htdocs\cafeteria\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `stock_m...', 0)
+#1 C:\xampp\htdocs\cafeteria\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `stock_m...')
+#2 C:\xampp\htdocs\cafeteria\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `stock_m...')
+#3 C:\xampp\htdocs\cafeteria\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `stock_m...', Array, false)
+#4 C:\xampp\htdocs\cafeteria\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\cafeteria\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\cafeteria\app\Controllers\Temporalcompra.php(29): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(832): App\Controllers\Temporalcompra->insertar('8', '1', '6262d8f911165')
+#8 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporalcompra))
+#9 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\cafeteria\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-04-22 11:34:26 --> Illegal parameter data types int and row for operation '='
+CRITICAL - 2022-04-22 11:34:26 --> Illegal parameter data types int and row for operation '='
+#0 C:\xampp\htdocs\cafeteria\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `stock_m...', 0)
+#1 C:\xampp\htdocs\cafeteria\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `stock_m...')
+#2 C:\xampp\htdocs\cafeteria\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `stock_m...')
+#3 C:\xampp\htdocs\cafeteria\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `stock_m...', Array, false)
+#4 C:\xampp\htdocs\cafeteria\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\cafeteria\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\cafeteria\app\Controllers\Temporalcompra.php(29): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(832): App\Controllers\Temporalcompra->insertar('8', '1', '6262d8f911165')
+#8 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Temporalcompra))
+#9 C:\xampp\htdocs\cafeteria\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\cafeteria\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
